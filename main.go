@@ -6,6 +6,12 @@ import (
 	s "./anotherTest"
 )
 
+type Animal struct {
+    Name string
+    Color string
+    Characteristic string
+}
+
 func main() {
  	fmt.Println("Hello world from Go!")
 
@@ -28,4 +34,21 @@ func main() {
 
 	test.TestExample()
     SayHello()
+    abc("oi", 5)
+
+    python := Car {
+        Name: "Python",
+        Color: "Yellow",
+        Characteristic: "Snake"
+    }
+
+    fmm.Println(python.Name)
+}
+
+func abc(a string, b int) (string, int, error){
+    if b < 10 {
+        return "", 0, errors.New("Deu ruim!")
+    }
+
+    return a, b, nil
 }
